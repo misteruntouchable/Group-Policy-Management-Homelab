@@ -30,34 +30,66 @@
  Installing Group Policy Management Console: <br/>
  <img src="https://imgur.com/aPsGxKP.png" height="80%" width="80%" "/>
 <p align="center"> First after we have entered into Windows Server 19 is go to Add Roles and Features and after you have checked Active Directory 
-                   Domain Services go to Group Policy Managment and ensure both of these features are installed into the server.<br/>
+                   Domain Services go to Group Policy Managment and ensure both of these features are installed into the server.</br>
 
-                   
-<br />
+</br>                   
+</br>
 
 <p align="center">
-   Configuring inside Group Policy Managment COnsole: <br/>
+   Configuring inside Group Policy Managment Console:</br>
 <img src="https://imgur.com/gNzKNia.png" height="80%" width="80%""/>
  <p align="center"> Next inside the Windows Server VM go to the search prompt and type  "Group Policy Management Console and open. 
-                    Our intention is to change the group policy. So within the console you need to extend your domain and find Group Policy Object. 
-                    Right Click the Oject and then go to edit. This should open Group Policy Managment Editor. This is where you can create
-                   different policies for your domain.
+                    Our intention is to change the group policy. So within the console you need to extend your domain and find Group Policy 
+                   Object. Right Click the Object and then go to edit. This should open Group Policy Managment Editor. This is where you can create
+                   different policies for your domain.</br>
+  </br>
+  </br>
   
-                   <br/>
-
-
+  </br>
 <br />
-<br />
-
-
 <p align="center">
-   Group Policy Managment Editor: <br/>
+ Group Policy Managment Editor: </br>
 <img src="https://imgur.com/M31NyDR.png" height="80%" width="80%""/>
- <p align="center">          <br/>
+ <p align="center">  There are two types of configurations in GPME setting,computer and user. Computer configuration applies to the local 
+                      computer and does not change per user. User configuration applies to the users on the local machine and will apply 
+                      to any new users in the future on the local computer. An example of both of these definitions is that if you wanted 
+                      to create policy or settings for all of your computers in a network you will use computer configuration. But if 
+                      you want to apply a policy to people working within a company or business you are going to use the user configuration.
+                      <br/>
 
 
 <br />
 <br />
+
+
+</br>
+<br/>
+<p align="center">
+ Group Policy Managment (Policies and Preferences): </br>
+<img src="https://imgur.com/RcA9uxZ.png" height="80%" width="80%""/>
+ <p align="center"> Now if we check under the settings of Computer and User Configuration you should see more options or settings available.
+                    Two of the main options to be addressed here are policies and preferences. The differences between the two are that policies 
+                     can't be changed by users that are enforced. Policies restrict the user's choices and can be enforced by admins. An 
+                     example of these are password policies or account lockout policies. Preferences are settings that can be changed by the
+                      users. Ex. mapped networks, drivers, printers, desktop shortcuts.<br/>
+
+
+<br />
+<br />
+
+
+</br>
+<br/>
+<p align="center">
+  Setting Up Group Policy(Password Policy) </br>
+<img src="https://imgur.com/HUPYEMU.png" height="80%" width="80%""/>
+ <p align="center"> Now let's set up a password policy to enforce a strong password and enhance the security. First we want to the Group
+                    Policy Management Console, as we have discuss earlier, then right click on your  <br/>
+
+
+<br />
+<br />
+   
   
   
 
