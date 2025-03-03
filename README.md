@@ -84,11 +84,57 @@
   Setting Up Group Policy(Password Policy) </br>
 <img src="https://imgur.com/HUPYEMU.png" height="80%" width="80%""/>
  <p align="center"> Now let's set up a password policy to enforce a strong password and enhance the security. First we want to the Group
-                    Policy Management Console, as we have discuss earlier, then right click on your  <br/>
+                    Policy Management Console, as we have discuss earlier, then right click on your domain, then click Create a GPO in this Domain.
+                    This will open GPOEditor . Go to computer config-->Policies---->Windows Settings--->Security Settings---->Then find Password Policy<br/>
 
 
 <br />
 <br />
+
+</br>
+<br/>
+<p align="center">
+  Setting a Password Policy </br>
+<img src="https://imgur.com/cf6V1bb.png" height="80%" width="80%""/>
+ <p align="center"> At Password Policy right click on it then click edit. There are different opitons to set polices like Length of a password, Complexity
+                    of a password, Age of the Password, etc.. You will have the option to decide the password policy you want to set for the users under your 
+                    your domain.<br/>
+
+
+<br />
+<br />
+
+</br>
+<br/>
+<p align="center">
+  Setting Drive Mapping </br>
+<img src="https://imgur.com/RQbq8P0.png" height="80%" width="80%""/>
+ <p align="center"> This example shows how to use driving mapping in preferences to share files instead of policies and will affect individual users instead of 
+                    all the members within a domain. To do this the process is similar to setting policies. We want to the Group
+                    Policy Management Console, then right click on your domain, then click Create a GPO in this Domain. But instead of computer configuration go 
+                    to the User configuration go to preferences---> windows settings.--->Drive Maps---->right click a hit new map drive..create a path for 
+                    a shared folder and apply.  This will give you the ability to move around shared folders.      
+                     <br/>
+
+
+<br />
+<br />
+
+
+  </br>
+<br/>
+<p align="center">
+  Implementing and Testing </br>
+<img src="https://imgur.com/JPFd5vm.png" height="80%" width="80%""/>
+ <p align="center"> To implement the GPOs we want to implement them where we want to use them. Go to the Group Policy Management Console and for the two tasks 
+                    that we have created(Password Policy, and Drive Maps) we will find them in Group Policy Objects then drag and drop them into the 
+                    Organizational Units or Users where we want to apply them.  To test go to the client machine. Note: By default, Windows refreshes Group 
+                    Policy Setting every 90 minutes but if we need the policy to apply right away go to the command prompt in the Client VM and open. They type 
+                   "gpupdate /force" and restart the machine. All the policies that you have created should immediately apply.<br/>
+
+
+<br />
+<br /> 
    
   
   
