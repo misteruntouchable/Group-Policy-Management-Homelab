@@ -13,8 +13,8 @@
    before this lab configuration.
 
    <h2>Languages and Utilities Used</h2>
-- <b>Microsoft Windows 10 Pro</b>
-
+  -<b>Microsoft Windows 10 Pro</b>
+  
 - <b>Oracle Virtual Box</b>
  - <b>Windows Server 19</b>
 
