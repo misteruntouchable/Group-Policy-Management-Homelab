@@ -21,7 +21,7 @@
 <h2>Environments Used </h2>
 
 - <b>Windows 10</b> (21H2)
-- <b>Server 2019</b>
+- <b>Windows Server 2019</b>
   <b>Active Directory Group Policy Management Console</b>
 
 
